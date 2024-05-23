@@ -1,5 +1,18 @@
 import styles from './App.module.scss';
 import { ReactComponent as Eye } from './svg/eye.svg';
+import { ReactComponent as Arb } from './svg/Lg/arblg.svg';
+import { ReactComponent as Avalanche } from './svg/Lg/avalanchelg.svg';
+import { ReactComponent as Bnb } from './svg/Lg/bnblg.svg';
+import { ReactComponent as Cardano } from './svg/Lg/cardanolg.svg';
+import { ReactComponent as Cronos } from './svg/Lg/cronoslg.svg';
+import { ReactComponent as Ether } from './svg/Lg/ethlg.svg';
+import { ReactComponent as Fantom } from './svg/Lg/fantomlg.svg';
+import { ReactComponent as Klay } from './svg/Lg/klaytnlg.svg';
+import { ReactComponent as Opt } from './svg/Lg/optimismlg.svg';
+import { ReactComponent as Poly } from './svg/Lg/plylg.svg';
+import { ReactComponent as Polka } from './svg/Lg/polkalg.svg';
+import { ReactComponent as Tron } from './svg/Lg/tronlg.svg';
+import { ReactComponent as Vel } from './svg/Lg/velaslg.svg';
 import { ReactComponent as Lock } from './svg/lock.svg';
 import { ReactComponent as Gcloud } from './svg/Logo/gcloud.svg';
 import { ReactComponent as Gotbit } from './svg/Logo/gotbit.svg';
@@ -189,8 +202,86 @@ export default function App() {
             </div>
           </div>
         </section>
-        <section>1</section>
-        <section>1</section>
+        <section>
+          <div>
+            <div>
+              <h2>
+                Let's speak as developers to developers on how you can create
+                your own blockchain infrastructure and significantly reduce
+                costs
+              </h2>
+            </div>
+            <div>
+              <img src="/img/fndrphoto.png" alt="founder" />
+              <p>
+                Daniel Yavorovych
+                <br />
+                Co-Founder & CTO at RPC Fast
+              </p>
+              <a href="/">Contact Us</a>
+              <a href="/">Quick chat on Telegram</a>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Ultra-fast nodes for any blockchain</h2>
+          <div>
+            <Ether />
+            Etherium
+          </div>
+          <div>
+            <Bnb />
+            BNB Chain
+          </div>
+          <div>
+            <Poly /> Polygon
+          </div>
+          <div>
+            <Arb />
+            Arbitrum
+          </div>
+          <div>
+            <Polka />
+            Polkadot
+          </div>
+          <div>
+            <Avalanche />
+            Avalanche
+          </div>
+          <div>
+            <Cardano />
+            Cardano
+          </div>
+          <div>
+            <Vel />
+            Velas
+          </div>
+          <div>
+            <Klay />
+            Klaytn
+          </div>
+          <div>
+            <Tron />
+            Tron
+          </div>
+          <div>
+            <Cronos />
+            Cronos
+          </div>
+          <div>
+            <Opt />
+            Optimism
+          </div>
+          <div>
+            <Fantom />
+            Fantom
+          </div>
+          <p>
+            We support up to 85 blockchains.
+            <br />
+            Please contact us if your required chains are missing in this list
+          </p>
+        </section>
         <section>1</section>
         <section>1</section>
         <section>1</section>
