@@ -1,9 +1,11 @@
 import styles from './App.module.scss';
+import { ReactComponent as Extarw } from './svg/extlnk.svg';
 import { ReactComponent as Eye } from './svg/eye.svg';
 import { ReactComponent as Arb } from './svg/Lg/arblg.svg';
 import { ReactComponent as Avalanche } from './svg/Lg/avalanchelg.svg';
 import { ReactComponent as Bnb } from './svg/Lg/bnblg.svg';
 import { ReactComponent as Cardano } from './svg/Lg/cardanolg.svg';
+import { ReactComponent as Clutch } from './svg/Lg/clutchlg.svg';
 import { ReactComponent as Cronos } from './svg/Lg/cronoslg.svg';
 import { ReactComponent as Ether } from './svg/Lg/ethlg.svg';
 import { ReactComponent as Fantom } from './svg/Lg/fantomlg.svg';
@@ -282,8 +284,155 @@ export default function App() {
             Please contact us if your required chains are missing in this list
           </p>
         </section>
-        <section>1</section>
-        <section>1</section>
+        <section>
+          <div>
+            <div>
+              <h2>Pricing is as easy as what SaaS does</h2>
+            </div>
+            <div>
+              <ul>
+                <li>A fixed price for maintenance is included</li>
+                <li>Scale to infinity while paying for cloud resources only</li>
+                <li>
+                  We know how to cut costs by an average of 40% and optimize the
+                  TCO
+                </li>
+              </ul>
+            </div>
+            <h2>
+              Find your best-matching service pack comparing our node services
+            </h2>
+            <div>
+              <h3>Shared Nodes</h3>
+              <p>For startups and SME projects</p>
+              <h2>$0 - $1000</h2>
+              <ul>
+                <li>Natural latency</li>
+                <li>Standard security</li>
+                <li>Limited performance</li>
+                <li>Costs depend on traffic</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Dedicated Nodes</h3>
+              <p>For middle-sized projects</p>
+              <h2>From $450 *From $1500 for Solana</h2>
+              <ul>
+                <li>Guaranteed resources</li>
+                <li>High security</li>
+                <li>Transaction simulation</li>
+                <li>High customization</li>
+                <li>24/7 dedicated support</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Nodes Cluster</h3>
+              <p>For large enterprise projects</p>
+              <h2>From $2000</h2>
+              <ul>
+                <li>Ai-based autoscaling for better UX and reduced costs</li>
+                <li>Advanced MEV tools</li>
+                <li>Multi-regional deployment for optimized response time</li>
+                <li>High customization</li>
+                <li>24/7 dedicated support</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h2>
+              A bespoke solution created by
+              <a href="/">
+                Dysnix <Extarw />
+              </a>
+            </h2>
+            <img src="/img/clutchaward.png" alt="clutch award" />
+            <div>
+              8 years of on-hand experience in Kubernetes and blockchain
+            </div>
+            <div>
+              We're handling projects with a load of 1.5 million requests per
+              day
+            </div>
+            <div>Our team provides top-notch services for 99.9% of SLA</div>
+            <div>
+              <div>
+                <img src="/img/roman.png" alt="Roman" />
+                <hgroup>
+                  <h5>Roman Cherednik, Velas</h5>
+                  <p>Development for Financial Services Company</p>
+                </hgroup>
+                <a href="/">
+                  <Clutch />
+                  See on Clutch
+                </a>
+                <p>
+                  Thanks to the efforts of the Dysnix team, the company was able
+                  to attract the attention of the general public. The currency
+                  is stable while maintaining the necessary flexibility with the
+                  support of experts in the industry. The team has proven itself
+                  to be a reliable long-term partner.
+                </p>
+              </div>
+              <div>
+                <img src="/img/dmytro.png" alt="Dmytro" />
+                <hgroup>
+                  <h5>Dmytro Haidashenko, Shelf Network</h5>
+                  <p>Infrastructure Maintenance for Vehicle Trading Network</p>
+                </hgroup>
+                <a href="/">
+                  <Clutch />
+                  See on Clutch
+                </a>
+                <p>
+                  In the first stage of their optimization plan alone, Dysnix
+                  managed to reduce infrastructure costs by 25%. They provide
+                  remarkable response times, which allows them to react to
+                  unforeseen situations. This makes them ideal for handling
+                  urgent tasks.Roman Cherednik, Velas
+                </p>
+              </div>
+              <div>
+                <img src="/img/alexG.png" alt="Alex G" />
+                <hgroup>
+                  <h5>Alex Gluchowski, Matter Labs</h5>
+                  <p>zkSync Solution for IT Company</p>
+                </hgroup>
+                <a href="/">
+                  <Clutch />
+                  See on Clutch
+                </a>
+                <p>
+                  Dysnix contributed to the successful release of the company's
+                  product. They performed a custom auto-scaling solution to
+                  reduce the project's costs. The company now has the
+                  opportunity to earn a higher income and at the same time
+                  increase its likeability with speed and security as main
+                  offers.
+                </p>
+              </div>
+              <div>
+                <img src="/img/alexM.png" alt="Alex M" />
+                <hgroup>
+                  <h5>Alex Momot, Remme</h5>
+                  <p>Custom Software Dev for Cybersecurity Company</p>
+                </hgroup>
+                <a href="/">
+                  <Clutch />
+                  See on Clutch
+                </a>
+                <p>
+                  Dysnix provided a team of Blockchain experts that was always
+                  available to assist the client. They finished a product that
+                  presented new features in the company's digital asset
+                  exchange. As a result, the company now considers their deep
+                  involvement as an extension of their own team.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
         <section>1</section>
         <section>1</section>
       </main>
