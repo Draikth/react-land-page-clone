@@ -23,6 +23,7 @@ import { ReactComponent as Nansen } from './svg/Logo/nansen.svg';
 import { ReactComponent as Panswap } from './svg/Logo/pancakeswap.svg';
 import { ReactComponent as Peanut } from './svg/Logo/peanut.svg';
 import { ReactComponent as Polyg } from './svg/Logo/polyg.svg';
+import { ReactComponent as RPCcon } from './svg/Logo/RPCcontrast.svg';
 import { ReactComponent as RPClogo } from './svg/Logo/RPClogo.svg';
 import { ReactComponent as Velas } from './svg/Logo/velas.svg';
 import { ReactComponent as Zks } from './svg/Logo/zksync.svg';
@@ -433,8 +434,82 @@ export default function App() {
             </div>
           </div>
         </section>
-        <section>1</section>
-        <section>1</section>
+        <section>
+          <div>
+            <h2>Frequently Asked Questions: Basic Knowledge to Remind</h2>
+            <div>
+              <h4>What are blockchain nodes?</h4>
+              <p>
+                Nodes are the “knots” of the blockchain systems interconnected
+                to create the distributed network and secure it. One node can be
+                launched on one separate device or be a part of the
+                software-hardware complex where the node is allocated alongside
+                others. There are a lot of types of nodes: Web3 industry has
+                light nodes, archival nodes, mining nodes, masternodes, and
+                others. Each has its own specialization in transferring
+                information through the network.
+              </p>
+            </div>
+            <div>
+              <h4>How do nodes work?</h4>
+              <p>
+                Depending on the type of node, each node has its own functions,
+                states, and work procedures. But all-in-all, even blockchain
+                nodes for sale exist to validate transactions and store the
+                information about transactions. Nodes are unique tools of
+                distributed systems as each of them stores the whole information
+                about their network. With each new transaction in the
+                blockchain, all nodes are updating at the same time to keep
+                their information fresh.
+              </p>
+            </div>
+            <div>
+              <h4>What is a blockchain API?</h4>
+              <p>
+                Any blockchain Application Programming Interface (API) is a
+                developer's tool to get access to the functionality of
+                blockchain and implement it into any other project. Depending on
+                the API itself, the access might be direct or limited with some
+                kind of service interface that's built upon the API. RPC Fast is
+                the fastest API-based node-as-a-service blockchain industry
+                deserves.
+              </p>
+            </div>
+            <div>
+              <h4>How do I get blockchain API?</h4>
+              <p>
+                The best way to get the API for your needs is to read the
+                documentation of the dedicated blockchain. There are lots of
+                APIs available for different needs: Websockets, Rest APIs,
+                Payment Processing APIs, Simple Query APIs, Blockchain Data API,
+                and so on. RPC Fast, as nodes as a service, provides you with
+                all the functionality of the selected network with the help of a
+                blockchain API. Thus you can simply connect it with your
+                project.
+              </p>
+            </div>
+            <div>
+              <h4>What is blockchain architecture?</h4>
+              <p>
+                This type of architecture is a distributed network that keeps
+                the data about all events that happened inside each node that
+                participates in it. With such distributed architecture, the
+                environment is pretty secure yet transparent and trustable. This
+                technology is often applied for financial tools, but it's gone
+                far beyond in other industries now.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <div>
+              <a href="/">
+                <RPCcon />
+              </a>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
