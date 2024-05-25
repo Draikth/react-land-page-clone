@@ -1,4 +1,240 @@
 .App {
   background: whitesmoke;
-  height: 100vh;
+  color: #222;
+}
+
+.buttonFill {
+  color: #fff;
+  letter-spacing: 0;
+  text-transform: none;
+  white-space: nowrap;
+  background-color: #ff6928;
+  border: 2px solid #ff6928;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  transition: all 0.2s;
+}
+
+.buttonBorder {
+  color: #222;
+  text-transform: none;
+  background-color: transparent;
+  border: 2px solid #ff6928;
+  border-radius: 8px;
+  margin-right: 24px;
+  padding: 10px 16px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  transition: all 0.2s;
+}
+
+.header {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+
+  a {
+    text-decoration: none;
+  }
+
+  .navList {
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-right: 2rem; // Adjust the space between items as needed
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &.login,
+        &.signup {
+          margin-right: 0.5rem; // Reset right margin for these items
+          margin-left: 1rem; // Add left margin to separate from the rest of the items
+
+          &:first-child {
+            margin-left: 0.5rem;
+          }
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.sect1 {
+  background-color: #fdf2ec;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  .spanH {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .spOne {
+    background-color: #ffcd9f;
+    border-radius: 16px;
+    padding: 6px 12px;
+    line-height: 100%;
+    display: inline-block;
+  }
+
+  .spTwo {
+    background-color: #e3b4fa;
+    border-radius: 16px;
+    padding: 6px 12px;
+    line-height: 100%;
+    display: inline-block;
+  }
+
+  .spThree {
+    background-color: #b4dcfa;
+    border-radius: 16px;
+    padding: 6px 12px;
+    line-height: 100%;
+    display: inline-block;
+  }
+
+  .s1Grid {
+    padding: 150px 2.5rem 120px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    width: 80%;
+  }
+
+  .s1Buttons {
+    margin-top: 20px;
+    text-decoration: none;
+  }
+
+  .s1GH2 {
+    max-width: 480px;
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 151%;
+  }
+  .s1UnderGrid {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 150%;
+  }
+
+  .logoGrid {
+    grid-column-gap: 51px;
+    grid-row-gap: 32px;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto auto;
+    grid-auto-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+  }
+
+  .tableH2 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 100%;
+  }
+  /*
+  .tableGrid {
+    border: 1px solid #b4dcfa;
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 1030px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: clip;
+  }
+*/
+  .tableContainer {
+    border: 1px solid #b4dcfa;
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 1030px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden; /* Use 'hidden' instead of 'clip' for better browser support */
+  }
+
+  .tableGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .tableCell {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+}
+.sect2 {
+  background-color: #f8f3ff;
+}
+
+.sect3 {
+  background-color: #ecf7fd;
+}
+
+.sect4 {
+  background-color: #ffffff;
+}
+
+.sect5 {
+  background-color: #ecf7fd;
+}
+
+.sect6 {
+  background-color: #fdf2ec;
+}
+
+.sect7 {
+  background-color: #fdf2ec;
+}
+
+.sect8 {
+  background-color: #fdf2ec;
+}
+
+.sect9 {
+  background-color: #ffffff;
+}
+
+.sect10 {
+  background-color: #222;
+  color: #ffffff;
+}
+
+.footer {
+  background-color: transparent;
 }

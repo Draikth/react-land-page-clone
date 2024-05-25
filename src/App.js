@@ -1,18 +1,23 @@
 import styles from './App.module.scss';
+import { ReactComponent as Excl } from './svg/exclude.svg';
 import { ReactComponent as Extarw } from './svg/extlnk.svg';
 import { ReactComponent as Eye } from './svg/eye.svg';
+import { ReactComponent as Incl } from './svg/include.svg';
 import { ReactComponent as Arb } from './svg/Lg/arblg.svg';
 import { ReactComponent as Avalanche } from './svg/Lg/avalanchelg.svg';
 import { ReactComponent as Bnb } from './svg/Lg/bnblg.svg';
 import { ReactComponent as Cardano } from './svg/Lg/cardanolg.svg';
+import { ReactComponent as Chain } from './svg/Lg/chainstacklg.svg';
 import { ReactComponent as Clutch } from './svg/Lg/clutchlg.svg';
 import { ReactComponent as Cronos } from './svg/Lg/cronoslg.svg';
 import { ReactComponent as Ether } from './svg/Lg/ethlg.svg';
 import { ReactComponent as Fantom } from './svg/Lg/fantomlg.svg';
+import { ReactComponent as GetB } from './svg/Lg/GetBlocklg.svg';
 import { ReactComponent as Klay } from './svg/Lg/klaytnlg.svg';
 import { ReactComponent as Opt } from './svg/Lg/optimismlg.svg';
 import { ReactComponent as Poly } from './svg/Lg/plylg.svg';
 import { ReactComponent as Polka } from './svg/Lg/polkalg.svg';
+import { ReactComponent as Qn } from './svg/Lg/QuickNodelg.svg';
 import { ReactComponent as Tron } from './svg/Lg/tronlg.svg';
 import { ReactComponent as Vel } from './svg/Lg/velaslg.svg';
 import { ReactComponent as Lock } from './svg/lock.svg';
@@ -34,12 +39,12 @@ import { ReactComponent as VecD } from './svg/VectorD.svg';
 export default function App() {
   return (
     <div className={styles.App}>
-      <a href="/">
-        <RPClogo />
-      </a>
       <div>
-        <header>
-          <nav>
+        <header className={styles.header}>
+          <a href="/">
+            <RPClogo />
+          </a>
+          <nav className={styles.navList}>
             <ul>
               <li>
                 Web3 API
@@ -64,42 +69,59 @@ export default function App() {
               <li>
                 <a href="/">About Us</a>
               </li>
+
+              <li>
+                <a href="/" className={styles.buttonBorder}>
+                  Log in
+                </a>
+              </li>
+              <li>
+                <a href="/" className={styles.buttonFill}>
+                  Try it for free
+                </a>
+              </li>
             </ul>
           </nav>
-          <ul>
-            <li>
-              <a href="/">Log in</a>
-            </li>
-            <li>
-              <a href="/">Try it for free</a>
-            </li>
-          </ul>
         </header>
       </div>
       <main>
-        <section>
+        <section className={styles.sect1}>
           <div>
-            <h1>
-              The <span>fastest</span>
-              <span> geo-distributed</span>
-              <span> high-available</span> blockchain nodes
-            </h1>
-            <p>
-              Get all the advantages of blockchain API on your own secure
-              environment
-            </p>
-            <div>
-              <a href="/">Contact Us</a>
-              <a href="/">Quick chat on Telegram</a>
-            </div>
-            <div>
-              <Vault />
-            </div>
-            <div>
-              <h2>
-                We are the premium node provider trusted by industry leaders
-              </h2>
+            <div className={styles.s1Grid}>
               <div>
+                <div>
+                  <h1 className={styles.spanH}>
+                    The <span className={styles.spOne}>fastest</span>
+                    <span className={styles.spTwo}> geo-distributed</span>
+                    <span className={styles.spThree}> high-available</span>
+                    blockchain nodes
+                  </h1>
+                </div>
+                <div>
+                  <h2 className={styles.s1GH2}>
+                    Get all the advantages of blockchain API on your own secure
+                    environment
+                  </h2>
+                </div>
+                <div className={styles.s1Buttons}>
+                  <a href="/" className={styles.buttonFill}>
+                    Contact Us
+                  </a>
+                  <a href="/" className={styles.buttonBorder}>
+                    Quick chat on Telegram
+                  </a>
+                </div>
+              </div>
+              <div>
+                <Vault />
+              </div>
+            </div>
+            <div>
+              <h2 className={styles.s1UnderGrid}>
+                We are the premium node provider <br /> trusted by industry
+                leaders
+              </h2>
+              <div className={styles.logoGrid}>
                 <Gcloud />
                 <Polyg />
                 <Panswap />
@@ -112,9 +134,113 @@ export default function App() {
                 <Kolib />
               </div>
             </div>
+            <div>
+              <h2 className={styles.tableH2}>
+                Leave the node infrastructure challenges to us
+              </h2>
+              <div className={styles.tableContainer}>
+                <div className={styles.tableGrid}>
+                  <div className={styles.tableCell} />
+                  <div className={styles.tableCell}>
+                    <RPClogo />
+                  </div>
+                  <div className={styles.tableCell}>
+                    <Qn /> Quicknode
+                  </div>
+                  <div className={styles.tableCell}>
+                    <Chain /> Chainstack
+                  </div>
+                  <div className={styles.tableCell}>
+                    <GetB /> GetBlock
+                  </div>
+
+                  <div className={styles.tableCell}>Hosting provider</div>
+                  <div className={styles.tableCell}>Public cloud, on-prem</div>
+                  <div className={styles.tableCell}>Public cloud, on-prem</div>
+                  <div className={styles.tableCell}>Public cloud, on-prem</div>
+                  <div className={styles.tableCell}>
+                    Self-hosted infrastructure
+                  </div>
+
+                  <div className={styles.tableCell}>Caching</div>
+                  <div className={styles.tableCell}>
+                    <Incl />
+                  </div>
+                  <div className={styles.tableCell}>Depends on setup</div>
+                  <div className={styles.tableCell}>
+                    <Incl />
+                  </div>
+                  <div className={styles.tableCell}>
+                    <Excl />
+                  </div>
+
+                  <div className={styles.tableCell}>Real-time monitoring</div>
+                  <div className={styles.tableCell}>
+                    Yes, tailored to the client
+                  </div>
+                  <div className={styles.tableCell}>
+                    Yes, on the provider's side
+                  </div>
+                  <div className={styles.tableCell}>
+                    Yes, on the provider's side
+                  </div>
+                  <div className={styles.tableCell}>
+                    Yes, on the provider's side
+                  </div>
+
+                  <div className={styles.tableCell}>
+                    Predictive automatic Autoscaling
+                  </div>
+                  <div className={styles.tableCell}>
+                    <Incl />
+                  </div>
+                  <div className={styles.tableCell}>
+                    <Excl />
+                  </div>
+                  <div className={styles.tableCell}>
+                    <Incl />
+                  </div>
+                  <div className={styles.tableCell}>
+                    <Excl />
+                  </div>
+
+                  <div className={styles.tableCell}>
+                    Custom Web3 infrastructure solutions
+                  </div>
+                  <div className={styles.tableCell}>
+                    <Incl />
+                  </div>
+                  <div className={styles.tableCell}>
+                    <Excl />
+                  </div>
+                  <div className={styles.tableCell}>
+                    <Excl />
+                  </div>
+                  <div className={styles.tableCell}>
+                    <Excl />
+                  </div>
+
+                  <div className={styles.tableCell}>
+                    Full-cycle DevOps service
+                  </div>
+                  <div className={styles.tableCell}>
+                    <Incl />
+                  </div>
+                  <div className={styles.tableCell}>
+                    <Excl />
+                  </div>
+                  <div className={styles.tableCell}>
+                    <Excl />
+                  </div>
+                  <div className={styles.tableCell}>
+                    <Excl />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
-        <section>
+        <section className={styles.sect2}>
           <div>
             <h1>
               Why our RPC nodes outperform traditional blockchain API providers
@@ -154,7 +280,7 @@ export default function App() {
             </div>
           </div>
         </section>
-        <section>
+        <section className={styles.sect3}>
           <div>
             <h1>
               99,9% <br /> uptime
@@ -165,7 +291,7 @@ export default function App() {
             </h2>
           </div>
         </section>
-        <section>
+        <section className={styles.sect4}>
           <div>
             <h2>
               Boost your Web3 project with our node infrastructure solutions
@@ -205,7 +331,7 @@ export default function App() {
             </div>
           </div>
         </section>
-        <section>
+        <section className={styles.sect5}>
           <div>
             <div>
               <h2>
@@ -226,7 +352,7 @@ export default function App() {
             </div>
           </div>
         </section>
-        <section>
+        <section className={styles.sect6}>
           <h2>Ultra-fast nodes for any blockchain</h2>
           <div>
             <Ether />
@@ -285,7 +411,7 @@ export default function App() {
             Please contact us if your required chains are missing in this list
           </p>
         </section>
-        <section>
+        <section className={styles.sect7}>
           <div>
             <div>
               <h2>Pricing is as easy as what SaaS does</h2>
@@ -340,7 +466,7 @@ export default function App() {
             </div>
           </div>
         </section>
-        <section>
+        <section className={styles.sect8}>
           <div>
             <h2>
               A bespoke solution created by
@@ -434,7 +560,7 @@ export default function App() {
             </div>
           </div>
         </section>
-        <section>
+        <section className={styles.sect9}>
           <div>
             <h2>Frequently Asked Questions: Basic Knowledge to Remind</h2>
             <div>
@@ -501,15 +627,64 @@ export default function App() {
             </div>
           </div>
         </section>
-        <section>
+        <section className={styles.sect10}>
           <div>
             <div>
               <a href="/">
                 <RPCcon />
               </a>
             </div>
+            <div>
+              <h3>Available blockchains</h3>
+              <ul>
+                <li>
+                  <a href="/">Ethereum API</a>
+                  <a href="/">Binance Smart Chain API</a>
+                  <a href="/">Polygon API</a>
+                  <a href="/">Velas API</a>
+                  <a href="/">Mempool blockchain API</a>
+                  <a href="/">Mempool BNB API</a>
+                  <a href="/">Mempool Polygon API</a>
+                  <a href="/">Dedicated Solana Nodes</a>
+                  <a href="/">Dedicated BNB Nodes</a>
+                  <a href="/">Dedicated ETH Nodes</a>
+                  <a href="/">Dedicated Polygon Nodes</a>
+                  <a href="/">Dedicated Avalanche Nodes</a>
+                  <a href="/">Dedicated Aptos Nodes</a>
+                  <a href="/">Dedicated TON Nodes</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>Resources</h3>
+              <ul>
+                <li>
+                  <a href="/">Documentation</a>
+                  <a href="/">Guides</a>
+                  <a href="/">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>Company</h3>
+              <ul>
+                <li>
+                  <a href="/">About us</a>
+                  <a href="/">Contact us</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
+        <footer className={styles.footer}>
+          <div>
+            <p>Tallinn, Vesivärava str 50-201, 10152, Estonia</p>
+            <a href="/">contact@rpcfast.com</a>
+            <a href="/">© RPC Fast API. 2024.</a>
+            <a href="/">Privacy policy</a>
+            <a href="/">Terms of Use</a>
+          </div>
+        </footer>
       </main>
     </div>
   );
