@@ -295,52 +295,64 @@ export default function App() {
         </section>
         <section className={styles.sect3}>
           <div>
-            <h1>
-              99,9% <br /> uptime
+            <h1 className={styles.bigText}>
+              99,9% <br /> <span className={styles.btSpan}>uptime</span>
             </h1>
-            <h2>
+            <h2 className={styles.btH2}>
               Uninterrupted availability for optimal user experience and
               exceptional customer support
             </h2>
           </div>
         </section>
         <section className={styles.sect4}>
-          <div>
-            <h2>
+          <div className={styles.sect4Container}>
+            <h2 className={styles.sect4H2}>
               Boost your Web3 project with our node infrastructure solutions
             </h2>
-            <div>
-              <div>
-                <Rabbit />
+            <div className={styles.sect4C1}>
+              <div className={styles.s4CardGrid}>
+                <div>
+                  <Rabbit className={styles.s4Img} />
+                </div>
+                <h3>Dedicated Nodes</h3>
+                <p>
+                  For middle-sized projects that demand dedicated resources for
+                  peak performance and scalability.
+                </p>
+                <a href="/" className={styles.buttonFill}>
+                  Learn more
+                </a>
               </div>
-              <h3>Dedicated Nodes</h3>
-              <p>
-                For middle-sized projects that demand dedicated resources for
-                peak performance and scalability.
-              </p>
-              <a href="/">Learn more</a>
             </div>
-            <div>
-              <div>
-                <Lock />
+            <div className={styles.sect4C2}>
+              <div className={styles.s4CardGrid}>
+                <div>
+                  <Lock className={styles.s4Img} />
+                </div>
+                <h3>Dedicated Node Cluster</h3>
+                <p>
+                  For high volume operations with the lowest latency,
+                  customized, global self-hosted infrastructure
+                </p>
+                <a href="/" className={styles.buttonFill}>
+                  Learn more
+                </a>
               </div>
-              <h3>Dedicated Node Cluster</h3>
-              <p>
-                For high volume operations with the lowest latency, customized,
-                global self-hosted infrastructure
-              </p>
-              <a href="/">Learn more</a>
             </div>
-            <div>
-              <div>
-                <Eye />
+            <div className={styles.sect4C3}>
+              <div className={styles.s4CardGrid}>
+                <div>
+                  <Eye className={styles.s4Img} />
+                </div>
+                <h3>MEV Infrastructure</h3>
+                <p>
+                  Optimized MEV-solution for high-frequency exchanges: includes
+                  Self-hosted nodes, Mempool data, and Transaction simulator
+                </p>
+                <a href="/" className={styles.buttonFill}>
+                  Learn more
+                </a>
               </div>
-              <h3>MEV Infrastructure</h3>
-              <p>
-                Optimized MEV-solution for high-frequency exchanges: includes
-                Self-hosted nodes, Mempool data, and Transaction simulator
-              </p>
-              <a href="/">Learn more</a>
             </div>
           </div>
         </section>

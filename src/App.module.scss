@@ -302,11 +302,105 @@
 .sect3 {
   background-color: #ecf7fd;
   padding: 120px 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .bigText {
+    color: #ff6928;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 200px;
+    font-weight: 600;
+    line-height: 120%;
+  }
+  .btSpan {
+    margin-top: 0;
+    font-size: 100px;
+    line-height: 1em;
+    display: block;
+  }
+
+  .btH2 {
+    text-align: center;
+    max-width: 1040px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 150%;
+  }
 }
 
 .sect4 {
   background-color: #ffffff;
   padding: 120px 2.5rem;
+
+  .sect4Container {
+    width: 100%;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sect4H2 {
+    text-align: center;
+    max-width: 790px;
+    margin: 0 auto 40px;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 120%;
+  }
+
+  .s4CardGrid {
+    align-items: center;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+  }
+
+  .sect4C1 {
+    background-color: #ecf7fd;
+    border: 3px solid #b4dcfa;
+    border-radius: 50px;
+    align-items: center;
+    height: 400px;
+    margin-right: 80px;
+    padding: 40px;
+    display: flex;
+    box-shadow: 4px 4px #b4dcfa;
+  }
+
+  .sect4C2 {
+    background-color: #f8f3ff;
+    border: 3px solid #e3b4fa;
+    border-radius: 50px;
+    align-items: center;
+    height: 400px;
+    margin-right: 80px;
+    padding: 40px;
+    display: flex;
+    box-shadow: 4px 4px #e3b4fa;
+  }
+
+  .sect4C3 {
+    background-color: #fdf2ec;
+    border: 3px solid #ffcd9f;
+    border-radius: 50px;
+    align-items: center;
+    height: 400px;
+    margin-right: 80px;
+    padding: 40px;
+    display: flex;
+    box-shadow: 4px 4px #ffcd9f;
+  }
+
+  .s4Img {
+    max-width: 275px;
+  }
 }
 
 .sect5 {
