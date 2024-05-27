@@ -357,23 +357,27 @@ export default function App() {
           </div>
         </section>
         <section className={styles.sect5}>
-          <div>
+          <div className={styles.s5BlBox}>
             <div>
-              <h2>
+              <h2 className={styles.s5BoxTxt}>
                 Let's speak as developers to developers on how you can create
                 your own blockchain infrastructure and significantly reduce
                 costs
               </h2>
             </div>
             <div>
-              <img src="/img/fndrphoto.png" alt="founder" />
-              <p>
+              <img src="/img/fndrphoto.png" alt="founder" width={63} />
+              <p className={styles.s5BxCaption}>
                 Daniel Yavorovych
                 <br />
                 Co-Founder & CTO at RPC Fast
               </p>
-              <a href="/">Contact Us</a>
-              <a href="/">Quick chat on Telegram</a>
+              <a href="/" className={styles.buttonFill}>
+                Contact Us
+              </a>
+              <a href="/" className={styles.buttonBorderWTxt}>
+                Quick chat on Telegram
+              </a>
             </div>
           </div>
         </section>

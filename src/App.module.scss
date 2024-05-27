@@ -406,6 +406,34 @@
 .sect5 {
   background-color: #ecf7fd;
   padding: 120px 2.5rem;
+
+  .s5BlBox {
+    background-color: #222;
+    border-radius: 50px;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 0;
+    padding: 60px;
+    display: flex;
+  }
+
+  .s5BoxTxt {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 150%;
+    display: inline-block;
+    max-width: 703px;
+  }
+
+  .s5BxCaption {
+    color: #fff;
+    margin-bottom: 2px;
+    font-size: 18px;
+    line-height: 150%;
+  }
 }
 
 .sect6 {
@@ -456,6 +484,20 @@
 
 .buttonBorder {
   color: #222;
+  text-transform: none;
+  background-color: transparent;
+  border: 2px solid #ff6928;
+  border-radius: 8px;
+  margin-right: 24px;
+  padding: 10px 16px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  transition: all 0.2s;
+}
+
+.buttonBorderWTxt {
+  color: #fff;
   text-transform: none;
   background-color: transparent;
   border: 2px solid #ff6928;
