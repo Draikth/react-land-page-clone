@@ -16,3 +16,8 @@ body {
   line-height: 20px;
   display: block;
 }
+
+div {
+  display: block;
+  unicode-bidi: isolate;
+}

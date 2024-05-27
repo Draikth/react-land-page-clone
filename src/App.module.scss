@@ -3,42 +3,13 @@
   color: #222;
 }
 
-.buttonFill {
-  color: #fff;
-  letter-spacing: 0;
-  text-transform: none;
-  white-space: nowrap;
-  background-color: #ff6928;
-  border: 2px solid #ff6928;
-  border-radius: 8px;
-  padding: 10px 16px;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 24px;
-  transition: all 0.2s;
-}
-
-.buttonBorder {
-  color: #222;
-  text-transform: none;
-  background-color: transparent;
-  border: 2px solid #ff6928;
-  border-radius: 8px;
-  margin-right: 24px;
-  padding: 10px 16px;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 24px;
-  transition: all 0.2s;
-}
-
 .header {
+  padding: 1rem 2.5rem;
   position: absolute;
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
   color: inherit;
   font-size: 14px;
   font-weight: 400;
@@ -81,6 +52,7 @@
 }
 
 .sect1 {
+  padding: 120px 2.5rem;
   background-color: #fdf2ec;
   justify-content: center;
   align-items: center;
@@ -162,7 +134,7 @@
     font-weight: 500;
     line-height: 100%;
   }
-  /*
+  /* table grid attempt that didn't quite work, but may want to try again.
   .tableGrid {
     border: 1px solid #b4dcfa;
     background-color: #fff;
@@ -182,13 +154,13 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    overflow: hidden; /* Use 'hidden' instead of 'clip' for better browser support */
+    overflow: hidden;
   }
 
   .tableGrid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
+    gap: 5px;
     padding: 10px;
   }
 
@@ -200,41 +172,204 @@
 }
 .sect2 {
   background-color: #f8f3ff;
+  padding: 120px 2.5rem;
+
+  .sect2H2 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 150%;
+    max-width: 800px;
+    margin-bottom: 40px;
+  }
+
+  .sect2CardGrid {
+    display: grid;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .card1Vlt {
+    box-shadow: 4px 4px 0 0 #e3b4fa;
+    background-color: #fff;
+    border: 3px solid #e3b4fa;
+    border-radius: 50px;
+    align-items: center;
+    height: 100%;
+    padding: 40px;
+    display: inline-block;
+  }
+
+  .card1LTxt {
+    color: #222;
+    background-color: #e3b4fa;
+    text-align: center;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 189px;
+    padding: 16px;
+    font-size: 32px;
+    line-height: 130%;
+    display: inline-block;
+  }
+  .cardRTxt {
+    color: #222;
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+    display: inline;
+  }
+
+  .card2Or {
+    box-shadow: 4px 4px 0 0 #ffcd9f;
+    background-color: #fff;
+    border: 3px solid #ffcd9f;
+    border-radius: 50px;
+    align-items: center;
+    height: 100%;
+    padding: 40px;
+    display: inline-flex;
+  }
+
+  .card2LTxt {
+    color: #222;
+    background-color: #ffcd9f;
+    text-align: center;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 189px;
+    padding: 16px;
+    font-size: 32px;
+    line-height: 130%;
+    display: inline-block;
+  }
+
+  .card3Blu {
+    box-shadow: 4px 4px 0 0 #b4dcfa;
+    background-color: #fff;
+    border: 3px solid #b4dcfa;
+    border-radius: 50px;
+    align-items: center;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+  }
+
+  .card3LTxt {
+    color: #222;
+    background-color: #b4dcfa;
+    text-align: center;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 189px;
+    padding: 16px;
+    font-size: 32px;
+    line-height: 130%;
+    display: inline-block;
+  }
+
+  .card4Blk {
+    box-shadow: 4px 4px 0 0 #222;
+    background-color: #fff;
+    border: 3px solid #222;
+    border-radius: 50px;
+    align-items: center;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+  }
+
+  .card4LTxt {
+    color: #fff;
+    background-color: #222;
+    text-align: center;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 189px;
+    padding: 16px;
+    font-size: 32px;
+    line-height: 130%;
+    display: inline-block;
+  }
 }
 
 .sect3 {
   background-color: #ecf7fd;
+  padding: 120px 2.5rem;
 }
 
 .sect4 {
   background-color: #ffffff;
+  padding: 120px 2.5rem;
 }
 
 .sect5 {
   background-color: #ecf7fd;
+  padding: 120px 2.5rem;
 }
 
 .sect6 {
   background-color: #fdf2ec;
+  padding: 120px 2.5rem;
 }
 
 .sect7 {
   background-color: #fdf2ec;
+  padding: 120px 2.5rem;
 }
 
 .sect8 {
   background-color: #fdf2ec;
+  padding: 120px 2.5rem;
 }
 
 .sect9 {
   background-color: #ffffff;
+  padding: 120px 2.5rem;
 }
 
 .sect10 {
   background-color: #222;
   color: #ffffff;
+  padding: 120px 2.5rem;
 }
 
 .footer {
   background-color: transparent;
+  padding: 120px 2.5rem;
+}
+
+.buttonFill {
+  color: #fff;
+  letter-spacing: 0;
+  text-transform: none;
+  white-space: nowrap;
+  background-color: #ff6928;
+  border: 2px solid #ff6928;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  transition: all 0.2s;
+}
+
+.buttonBorder {
+  color: #222;
+  text-transform: none;
+  background-color: transparent;
+  border: 2px solid #ff6928;
+  border-radius: 8px;
+  margin-right: 24px;
+  padding: 10px 16px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  transition: all 0.2s;
 }

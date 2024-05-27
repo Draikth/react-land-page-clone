@@ -242,40 +242,53 @@ export default function App() {
         </section>
         <section className={styles.sect2}>
           <div>
-            <h1>
+            <h2 className={styles.sect2H2}>
               Why our RPC nodes outperform traditional blockchain API providers
-            </h1>
-            <div>
-              <div>5x Cost Reduction</div>
-              <div>
-                Compared to the 3rd party providers. Pay only for the node. No
-                scaling bills
+            </h2>
+            <div className={styles.sect2CardGrid}>
+              <div className={styles.card1Vlt}>
+                <div className={styles.card1LTxt}>5x Cost Reduction</div>
+                <div className={styles.cardRTxt}>
+                  Compared to the 3rd party
+                  <br /> providers. Pay only for the node. No scaling bills
+                </div>
               </div>
-            </div>
-            <div>
-              <div>Ultra Speed</div>
-              <div>RPC Response Time Under 4 ms</div>
-            </div>
-            <div>
-              <div>100% Healthy Nodes</div>
-              <div>Auto-recovery and traffic balancing for healthy nodes</div>
-            </div>
-            <div>
-              <div>AI-based Auto-scaling</div>
-              <div>
-                Our AI model predicts traffic and scales infrastructure
-                automatically
+              <div className={styles.card2Or}>
+                <div className={styles.card2LTxt}>Ultra Speed</div>
+                <div className={styles.cardRTxt}>
+                  RPC Response Time Under 4 ms
+                </div>
               </div>
-            </div>
-            <div>
-              <div>Smart Caching</div>
-              <div>Peak performance and resource optimization</div>
-            </div>
-            <div>
-              <div>Maximum Security</div>
-              <div>
-                Software-defined perimeter Firewall Security policy Auto-updated
-                software
+              <div className={styles.card3Blu}>
+                <div className={styles.card3LTxt}>100% Healthy Nodes</div>
+                <div className={styles.cardRTxt}>
+                  Auto-recovery and traffic balancing for healthy nodes
+                </div>
+              </div>
+              <div className={styles.card4Blk}>
+                <div className={styles.card4LTxt}>AI-based Auto-scaling</div>
+                <div className={styles.cardRTxt}>
+                  Our AI model predicts traffic and scales infrastructure
+                  automatically
+                </div>
+              </div>
+              <div className={styles.card2Or}>
+                <div className={styles.card2LTxt}>Smart Caching</div>
+                <div className={styles.cardRTxt}>
+                  Peak performance and resource optimization
+                </div>
+              </div>
+              <div className={styles.card1Vlt}>
+                <div className={styles.card1LTxt}>Maximum Security</div>
+                <div className={styles.cardRTxt}>
+                  Software-defined perimeter
+                  <br />
+                  Firewall
+                  <br />
+                  Security policy
+                  <br />
+                  Auto-updated software
+                </div>
               </div>
             </div>
           </div>
